@@ -1,0 +1,25 @@
+:root {
+    --font-body: Poppins, sans-serif;
+    --color-blue: #000033;
+    --color-orange: #f60;
+    --color-pink: #dc143c;
+    --weight: 600;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.title {
+    color: var(--color-pink)
+}
+
+p {
+    --color-blue: #6060e1;
+    color: var(--color-blue)
+}
+
+a {
+    color: var(--color-pink);
+    font-weight: var(--weight);
+}

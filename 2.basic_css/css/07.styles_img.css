@@ -1,0 +1,38 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #dc143c;
+}
+
+/* formatando apenas as imagens da classe galeria */
+
+.galeria img {
+    border-radius: 5px 150px 200px 10px;
+    aspect-ratio: 16/9;
+    filter: grayscale(1);
+    box-shadow: 1px 1px 20px #eba205;
+
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+
+.w-20 {
+    width: 20%;
+
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+/* img {
+    width: 100%;
+} */

@@ -1,0 +1,46 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* .container {
+    color: #999999;
+}
+
+.container-title {
+    font-size: 50px;
+}
+
+.container-text {
+    font-size: 15px;
+}
+
+.container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #dc143c;
+} */
+
+
+
+/* Nesting Funcionando */
+.container {
+    color: #999;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .container-link {
+        font-size: 20px;
+        text-decoration: none;
+        color: #dc143c;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+}

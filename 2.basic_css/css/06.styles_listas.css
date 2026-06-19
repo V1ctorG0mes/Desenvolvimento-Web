@@ -1,0 +1,9 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/* Normalmente usamos css para retirar os simbolos para menu de navegação */
+ol,
+ul {
+    list-style: none;
+}

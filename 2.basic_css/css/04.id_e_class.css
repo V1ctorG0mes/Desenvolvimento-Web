@@ -1,0 +1,26 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#paragrafo-1 {
+    font-size: 30px;
+    color: #b30e60;
+}
+
+.paragrafo {
+    color: #1e9b1e;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.link {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #3cd9e1;
+    text-decoration: underline;
+}

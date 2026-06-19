@@ -1,0 +1,25 @@
+@property --text-color {
+    /* Criando variavel */
+    syntax: "<color>";
+    /* Sintaxe da variavel */
+    inherits: true;
+    /* valor boleano se a variavel herdas */
+    initial-value: #dc143c;
+    /* Valor da variavel */
+}
+
+@property --text-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 60px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.container h1 {
+    color: var(--text-color);
+    font-size: var(--text-size);
+
+}

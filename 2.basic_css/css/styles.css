@@ -1,0 +1,38 @@
+h1 { 
+    font-size: 40px; /* maior valor dos textos é 40px */
+    font-weight: 400; /* peso da fonte */
+    text-align: center; /* centraliza o texto */
+    text-decoration: line-through; /* decora o texto */
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify; /* texto preenche a tela horizontalmente*/
+    text-transform: uppercase; /* todas as letras maiusculas*/
+    line-height: 1.3; /* aumenta os espacamentos das linhas em 30%*/
+    letter-spacing: 3px; /* muda os espacamentos entre as letras*/
+    word-spacing: 10px; /* muda os espacamentos entre as palavras*/
+    white-space: nowrap; /* nao quebra a linha*/
+}
+
+a{
+    text-decoration: none; /*tira a linha de baixo do link*/
+    font-size: 27px;
+    font-weight: 500;
+    transition: .5s; /*mudança de estado para o hover*/
+    text-shadow: 1px 1px 10px black; /*sombra*/
+}
+
+a:hover{ /*quando o mouse estiver sobre ele*/
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px red; /*sombra*/
+}

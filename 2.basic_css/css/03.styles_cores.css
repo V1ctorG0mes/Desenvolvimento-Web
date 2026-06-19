@@ -1,0 +1,18 @@
+body{
+    font-family: "Poppins", sans-serif;
+    color: rgb(64, 126, 133);
+}
+
+p {
+    color: #dc143c;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #dc143c;
+}
