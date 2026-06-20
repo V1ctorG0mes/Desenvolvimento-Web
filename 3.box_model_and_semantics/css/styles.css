@@ -1,0 +1,23 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: #fcfcfc;
+    --color-blue-700: hsl(206, 100%, 33%);
+    --color-blue-900: hsl(208, 88%, 16%);
+}
+body {
+    font-family: var(--font-body, sans-serif);
+    color: var(--color-light);
+}
+h1 {
+    color: var(--color-blue-700);
+}
+.container1 {
+    background-color: var(--color-blue-700);
+    width: 400px;
+    height: 100px;
+}
+.container2 {
+    background-color: var(--color-blue-900);
+    max-width: 700px;
+    min-height: 300px;
+}

@@ -1,0 +1,65 @@
+:root{
+    --font-text: Poppins, sans-serif;
+    --color-brown-200: #c88219;
+    --color-brown-800: #2a1b04;
+    --color-light: #f4f4f4;
+}
+
+/* Reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+.hero {
+    min-height: 100dvh; /*Agora  a imagem ocupa todo o fundo e não so a div*/
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)),
+    url(../images/background_harley_davidson.jpg); /* linear-gradient deixa a imagem mais escurecida e o texto mais facil de ser lido*/
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobre toda a página */
+    background-position: center; /* Centraliza o foco para o centro */
+
+    align-content: center; /*Alinha para o centro vericalmente*/
+    text-align: center; /*Alinha para o centro horizontalmente*/
+
+    padding-inline: 30px;
+    text-wrap: balance; /*Nunca vai deixar uma palavra sozinha*/
+    color: var(--color-light);
+
+}
+
+.hero-title {
+    font-size: 9vmin;
+    text-wrap: balance;
+    margin: 30px 0;
+    
+}
+
+.hero-text{
+
+    font-size: 3vmin;
+    width: 70%;
+    text-wrap: balance;
+    line-height: 1.6;
+    margin: 30px auto 50px;
+}
+
+.btn {
+    width: 200px;
+    color: var(--color-brown-200);
+    text-decoration: none;
+    border: 1px solid var(--color-brown-200);
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    border-radius: 70px;
+    font-weight: 600;
+    transition: .5s;
+
+}
+
+.btn:hover{
+    background-color: var(--color-brown-800);
+}

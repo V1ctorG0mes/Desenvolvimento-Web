@@ -1,0 +1,26 @@
+:root {
+  --font-body: Poppins, sans-serif;
+  --text-lg: 24px;
+  --color-light: #fcfcfc;
+  --color-slate-600: rgb(27, 64, 156);
+  --color-slate-900: rgb(15, 23, 43);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-slate-900);
+  align-content: center;
+  height: 95vh;
+  text-align: center; /* Ajusta o alinhamento vertical */
+}
+
+h1 {
+  text-align: center; 
+  color: var(--color-light);
+}
+
+img {
+  width: 220px;
+  border-radius: 7px;
+  display: inline-block;
+}
