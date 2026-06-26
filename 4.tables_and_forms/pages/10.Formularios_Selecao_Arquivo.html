@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de arquivo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/10.styles.css">
+    
+</head>
+<body>
+    <main>
+        <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+            <fieldset class="dados-usuario">
+                <legend>Escolha o arquivo a ser enviado</legend>
+                <section class="form-campos">
+                    <div>
+                        <label for="arquivo">Clique para selecionar o arquivo:</label>
+                        <input type="file" name="arquivo" id="arquivo">
+                    </div>
+                </section>
+            </fieldset>
+            <div class="btn-container">
+                <button type="submit" id="enviar-arquivo" name="enviar-arquivo" class="btn">Enviar arquivo</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

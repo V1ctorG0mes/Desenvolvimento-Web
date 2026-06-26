@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos para números</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/06.styles.css">
+</head>
+<body>
+    <main>
+        <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+            <fieldset class="dados-usuario">
+                <legend>Campos para números</legend>
+                <section class="form-campos">
+                    <div>
+                        <label for="valor-numerico">Valor Numérico</label>
+                        <input type="number" name="valor-numerico" id="valor-numerico" required min="10" max="100"
+                            step="5" placeholder="Ex: 99">
+                    </div>
+                    <div>
+                        <label for="barra-valores">Escala de Valores</label>
+                        <input type="range" name="barra-valores" id="barra-valores" min="10" max="200" step="20">
+                    </div>
+                </section>
+                <div class="btn-container">
+                    <button type="submit" id="recupera-valor" name="recupera-valor" class="btn">Recuperar valores</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

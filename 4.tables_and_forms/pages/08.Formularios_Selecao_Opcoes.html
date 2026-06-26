@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de seleção</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/08.styles.css">
+</head>
+<body>
+    <main>
+        <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+            <fieldset class="dados-usuario">
+                <legend>Áreas de interesse</legend>
+                <section class="form-campos">
+                    <div>
+                        <input type="checkbox" name="interesse" id="interesse-1" value="frontend">
+                        <label for="interesse-1">Front-end</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesse" id="interesse-2" value="backend">
+                        <label for="interesse-2">Back-end</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesse" id="interesse-3" value="mobile">
+                        <label for="interesse-3">Desenvolvimento Mobile</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesse" id="interesse-4" value="devops">
+                        <label for="interesse-4">DevOps</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesse" id="interesse-5" value="ia">
+                        <label for="interesse-5">IA</label>
+                    </div>
+                </section>
+            </fieldset>
+            <fieldset class="dados-usuario">
+                <legend>Área de atuação</legend>
+                <section class="form-campos">
+                    <div>
+                        <input type="radio" name="atuacao" id="atuacao-1" value="desenvolvimento">
+                        <label for="atuacao-1">Desenvolvimento</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="atuacao" id="atuacao-2" value="gestao">
+                        <label for="atuacao-2">Gestão de projetos</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="atuacao" id="atuacao-3" value="infraestrutura">
+                        <label for="atuacao-3">Infraestrutura</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="atuacao" id="atuacao-4" value="banco-dados">
+                        <label for="atuacao-4">Banco de Dados</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="atuacao" id="atuacao-5" value="outras">
+                        <label for="atuacao-5">Outras</label>
+                    </div>
+                </section>
+            </fieldset>
+            <div class="btn-container">
+                <button type="submit" id="salvar-dados" name="salvar-dados" class="btn">
+                    Salvar dados
+                </button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

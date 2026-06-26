@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Consulta</title>
+
+    <!-- Link Google Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/05.styles.css">
+</head>
+
+
+<body>
+
+<!-- Formulario de busca -->
+<header class="header-search">
+    <form name="form-search" id="form-search" class="form-search" method="get" action="">
+        <input type="search" name="text-search" id="text-search" class="text-search" placeholder="Digite um usuário" autofocus required>
+        <button type="submit" id="btn-search" name="btn-search" class="btn">
+            buscar
+        </button>
+    </form>
+</header>
+
+<!-- Formulário de cadastro -->
+    <main>
+        <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+            <fieldset class="dados-usuario">
+                <legend>Dados do Usuário</legend>
+                <section class="form-campos">
+                    <div class="span-2">
+                        <label for="nome-usuario">Nome completo</label>
+                        <input type="text" name="nome-usuario" id="nome-usuario" required minlength="5" maxlength="50"
+                            placeholder="Ex: Fulano de Tal" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="senha-usuario">Senha</label>
+                        <input type="password" name="senha-usuario" id="senha-usuario" required minlength="8"
+                            maxlength="20" placeholder="Ex: @#$%abcd">
+                    </div>
+                    <div>
+                        <label for="email-usuario">E-mail</label>
+                        <input type="email" name="email-usuario" id="email-usuario" required maxlength="30"
+                            placeholder="Ex: seuemail@email.com" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="telefone-usuario">Telefone</label>
+                        <input type="tel" name="telefone-usuario" id="telefone-usuario" required
+                            placeholder="Ex: (99) 99999-9999" autocomplete="tel">
+                    </div>
+                    <div>
+                        <label for="site-usuario">Site pessoal</label>
+                        <input type="url" name="site-usuario" id="site-usuario"
+                            placeholder="Ex: https://www.seusite.com">
+                    </div>
+                </section>
+                <div class="btn-container">
+                    <button type="submit" id="criar-conta" name="criar-conta" class="btn">Criar Conta</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
+
