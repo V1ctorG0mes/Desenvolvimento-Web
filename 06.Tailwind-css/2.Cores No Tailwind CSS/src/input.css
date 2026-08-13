@@ -1,0 +1,11 @@
+/*Sempre que precisarmos criar, alterar ou sobrescrever alguma configuração do framework, as modificações serão feitas nesse arquivo.*/
+@import "tailwindcss";
+
+
+/* Diretiva onde se faz a configuração de qualquer elemento que eu queira na página */
+@theme {
+    --color-fiap : #dc143c;
+    --color-green : #009900;
+    --color-blue : #000099;
+
+}

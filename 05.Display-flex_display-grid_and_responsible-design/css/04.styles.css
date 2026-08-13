@@ -1,0 +1,77 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+:root {
+     --font-body: Quicksand;
+     --color-light: #fcfcfc;
+     --color-blue-300: #89c2d9;
+     --color-blue-400: #468faf;
+     --color-blue-500: #2a6f97;
+     --color-blue-600: #01497c;
+     --color-blue-900: #2c2a4a;
+     --radius: 5px;
+}
+body {
+     font-family: var(--font-body, monospace);
+     background-color: var(--color-blue-900);
+     color: var(--color-light);
+}
+h2 {
+     margin-top: 1.5rem;
+     text-align: center;
+}
+.container {
+     width: 90%;
+     margin: 0 auto 0;
+     padding: 10px 20px;
+     border-radius: var(--radius);
+     display: grid;
+
+
+     /* grid-template-columns | serve para definir a quantidade de colunas  */
+
+     /* divide os valores em pixels, % e fracao (fr) das boxes: */
+     /* grid-template-columns: 300px 250px 50px 100px; */
+     /* grid-template-columns: 25% 25% 25% 25%; */
+
+     /* função "repeat" serve para caso haja muitas colunas */
+     /* grid-template-columns: repeat(4, 1fr) | Quatro colunas fracionando 1 pra cada */
+     /* grid-template-columns: repeat(2, 1fr) 100px 200px; | duas colunas com 1fr e a proxima com 100px e 200px*/
+     /* grid-template-columns: repeat(2, minmax(100px, 1fr)); | duas colunas, encolhem ate 100px e o maximo de 1fr*/
+
+
+     /* auto-fit estica os boxs ate completar todo o espaço, auto-fill não */
+     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));, quando estoura vai pra linha de baixo */
+     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+     
+
+     /* define a altura: */
+     /* Na maioria da vezes declaramos apenas a largura */
+     /* grid-template-rows: 500px 600px; */
+
+}
+.box {
+     width: 100%;
+     margin: .5rem auto;
+     height: 4rem;
+     padding: 0 5px;
+     font-size: 1.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+}
+.box-1 {
+     background: var(--color-blue-300);
+}
+.box-2 {
+     background: var(--color-blue-400);
+}
+.box-3 {
+     background: var(--color-blue-500);
+}
+.box-4 {
+     background: var(--color-blue-600);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid no Tailwind CSS</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- w-[90%]: largura de 90% -->
+    <!-- mx-auto: margin-inline ou seja centraliza os elementos -->
+    <!-- grid: transorma em grid container -->
+    <!-- grid-cols-3: cria tres colunas -->
+    <section class="w-[90%] mx-auto my-3 p-2 grid grid-cols-3 gap-2">
+        <!-- col-span-2: mescla as colunas do grid -->
+        <!-- row-span-2: ocupa duas linhas do grid -->
+        <div class="col-span-2 row-span-2">
+            <!-- rounded-tl-3xl: arredonda margin top esquerda -->
+            <!-- rounded-tr-lg: arredonda margin top direita -->
+            <img src="./images/grid-1.jpg" alt="Agua" class="w-full rounded-tl-3xl rounded-tr-lg rounded-bl-3xl rounded-br-lg">
+        </div>
+        <div>
+            <img src="./images/grid-2.jpg" alt="Monte" class="w-full h-[97%] rounded-tl-lg rounded-bl-lg rounded-tr-3xl rounded-br-lg">
+        </div>
+        <div>
+            <img src="./images/grid-3.jpg" alt="Aurora Boreal" class="w-full h-[97%] rounded-tr-lg rounded-br-3xl rounded-bl-lg rounded-tl-lg">
+        </div>
+    </section>
+
+
+
+    <section class="w-[90%] mx-auto my-3 p-2 grid grid-cols-6 gap-2">
+        <div><img src="./images/grid-1.jpg" class="w-full rounded-lg" alt="Monte ABCD"></div>
+        <div><img src="./images/grid-2.jpg" class="w-full rounded-lg" alt="Monte ABCD"></div>
+        <div><img src="./images/grid-3.jpg" class="w-full rounded-lg" alt="Aurora Boreal""></div>
+        <div><img src=" ./images/grid-1.jpg" class="w-full rounded-lg" alt="Aurora Boreal"></div>
+        <div><img src="./images/grid-2.jpg" class="w-full rounded-lg" alt="Aurora Boreal"></div>
+        <div><img src="./images/grid-3.jpg" class="w-full rounded-lg" alt="Aurora Boreal"></div>
+    </section>
+
+
+</body>
+
+</html>

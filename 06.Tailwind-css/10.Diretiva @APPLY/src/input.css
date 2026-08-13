@@ -1,0 +1,22 @@
+@import "tailwindcss"; /*Sempre que precisarmos criar, alterar ou sobrescrever alguma configuração do framework, as
+modificações serão feitas nesse arquivo.*/
+
+.meu-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-700
+}
+
+.minha-caixa {
+    @apply bg-white p-6 rounded-lg shadow-md text-center max-w-md 
+}
+
+.meu-titulo {
+    @apply text-2xl font-bold text-blue-900 mb-4
+}
+
+.meu-paragrafo {
+    @apply text-gray-700 text-[20px] mb-6
+}
+
+.meu-link {
+    @apply inline-block px-6 py-4 bg-blue-600 text-gray-200 font-bold rounded-md
+}

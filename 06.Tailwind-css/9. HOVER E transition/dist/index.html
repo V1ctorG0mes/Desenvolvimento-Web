@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Tailwind CSS</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- w-[90%]: ocupa 90% da tela -->
+    <!-- mx-auto: centraliza pelo eixo x -->
+    <!-- grid: display grid -->
+    <!-- md:grid-cols-4 breakpoint de tela media criando um grid de 4 colunas -->
+    <section class="w-[90%] mx-auto my-10 grid md:grid-cols-4 gap-4">
+        <figure>
+            <!-- aspect-3/2: como as outras imagens são menores, serve para ajustar o tamanho e fica igual as outras que neste caso já são 3/2 -->
+            <!-- hover:scale-105: aumenta a imagem em 5% no width e height -->
+            <!-- duration-500: duração de 1/2 segundo (500 milissegundos) -->
+            <img src="./images/imagem-1.jpg" alt="Hotel - vista da suíte" class="aspect-3/2 rounded-md border-gray-400 hover:scale-105 duration-500">
+        </figure>
+        <figure >
+            <img src="./images/imagem-2.jpg" alt="Hotel - vista da suíte" class="rounded-md border-gray-400 hover:scale-105 duration-500">
+        </figure>
+        <figure >
+            <img src="./images/imagem-3.jpg" alt="Hotel - vista da suíte" class="rounded-md border-gray-400 hover:scale-105 duration-500">
+        </figure>
+        <figure >
+            <img src="./images/imagem-4.jpg" alt="Hotel - vista da suíte" class="rounded-md border-gray-400 hover:scale-105 duration-500">
+        </figure>
+    </section>
+
+    <section class="mb-40 flex justify-center text-center gap-4">
+        <a href="" class="border rounded-md p-4 text-2xl bg-indigo-700 text-slate-300 hover:bg-indigo-300 duration-500">Mais informações</a>
+        <a href="" class="border rounded-md p-4 text-2xl bg-indigo-400 text-slate-100 hover:bg-indigo-900 duration-500">Quero reservar uma suíte</a>
+    </section>
+
+</body>
+
+</html>

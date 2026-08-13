@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Tailwind</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Aplicando um gradiente -->
+    <!-- bg-linear-to-r: gradiente para direita -->
+    <!-- py: paddin eixo y -->
+    <!-- mb-4: margin-bottom 4 -->
+    <section class="bg-linear-to-r from-indigo-600 to-purple-500 py-20 text-white text-center mb-4">
+        <!-- text-5xl: tamanho do texto -->
+        <!-- mb-6: margin bottom -->
+        <h1 class="text-5xl font-extrabold mb-6">Transforme suas ideias em realidade</h1>
+        <!-- text-lg: text large -->
+        <p class="text-lg mb-13">Use o poder do Tailwind para criar interfaces modernas e responsivas</p>
+        <!-- px-6: padding eixo x -->
+        <!-- py-4: padding eixo y -->
+        <!-- rounded-lg: arredonda bordas -->
+        <!-- bg-linear-35: gradiente em 35 graus -->
+        <a href="" class="border px-6 py-4 font-semibold rounded-lg bg-linear-35 from-pink-700 to-indigo-600">Quero começar agora</a>
+    </section>
+
+
+    <!-- w-[95%]: ocupa 95% da tela (width) -->
+    <!-- mx-auto: margin no eixo x, faz a centralização a partir da % do widht -->
+    <!-- h-[85dvh]: 85% da altura do viewport -->
+    <!-- my-6: margin eixo y -->
+    <!-- p-5 padding de 20px -->
+    <!-- content-center: centraliza no eixo y -->
+    <!-- bg-cover: ocupa a área total do elemento -->
+    <section class="w-[95%] mx-auto h-[85dvh] my-6 p-5 rounded-lg content-center bg-[linear-gradient(to_top,rgba(0,0,0.8),transparent),url('../images/earth-back.jpg')] bg-cover bg-center">
+        <h1 class="text-blue-300 font-extrabold text-5xl uppercase">Imagem de fundo</h1>
+    </section>
+
+</body>
+
+</html>

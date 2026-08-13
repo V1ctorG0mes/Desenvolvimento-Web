@@ -1,0 +1,49 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+:root {
+     --font-body: Quicksand;
+     --color-light: #fcfcfc;
+     --color-blue-400: #907ad6;
+     --color-blue-900: #2c2a4a;
+     --radius: 5px;
+}
+body {
+     font-family: var(--font-body, monospace);
+     background-color: var(--color-blue-900);
+     color: var(--color-light);
+     padding: 0 10px;
+}
+h2 {
+     margin-top: 1.5rem;
+     text-align: center;
+}
+h3 {
+    margin-bottom: 5px;
+}
+.container {
+     margin: 0 auto 1.875rem;
+     padding: 10px 0;
+     border: 1px solid var(--color-blue-400);
+     border-radius: var(--radius);
+     display: flex;
+     flex-wrap: wrap;
+}
+.box {
+    width: 6.25rem;
+    height: 4rem;
+     border: 1px solid var(--color-blue-400);
+     border-radius: var(--radius);
+     margin: 5px;
+     padding: 0 5px;
+     font-size: 1.5rem;
+}
+
+.flex-ex01 {flex: 0 1 auto;} /*Não pode crescer mas pode encolher, largura baseada no filho (.box) ou no seu conteúdo*/
+.flex-ex02 {flex: 1;} /*Cresce para ocupar todo o espaço disponivel, muito usado, aplica um tamanho padrão para todos os elementos*/
+.flex-ex03 {flex: 2 1 200px;}  /*Cresce um pouco e ocupa todo o espaço de 200px*/
+
+/* {flex: 1 0 auto}  Poderá aumentar, não podera reduzir, e vai manter seu tamanho base*/
+/* {flex: 0 0 auto}  Não cresce nem encolhe, tamanho pelo conteúdo ou pela largura do elemento*/

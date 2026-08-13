@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Tailwind CSS</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- min-h-screen: altura minima de 100vh -->
+    <!-- w-full: sempre ocupa 100% da página -->
+    <!-- flex: display flex -->
+    <!-- flex-col: deixa os elementos em coluna -->
+    <!-- items-center: Centraliza no eixo y -->
+    <!-- justify-center: Centraliza no eixo x -->
+    <div class="min-h-screen w-full flex flex-col items-center justify-center p-10 text-center dark:bg-gray-900">
+        <h1 class="text-5xl font-extrabold text-gray-900 mb-6 dark:text-gray-100">
+            Bem-vindo ao Dark Mode
+        </h1>
+        <p class="text-lg text-gray-600 mb-8 dark:text-gray-300">
+            Ative o modo escuro e veja a mágica acontecer.
+        </p>
+        <button class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition cursor-pointer" id="btn-theme">
+            Clique para testar a mudança de tema
+        </button>
+    </div>
+</body>
+
+<script src="./js/dark.js"></script>
+
+</html>

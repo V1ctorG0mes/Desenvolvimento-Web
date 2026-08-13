@@ -1,0 +1,9 @@
+/* Antes do import tailwind, esta é a chamada para o elemento de fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import "tailwindcss"; /*Sempre que precisarmos criar, alterar ou sobrescrever alguma configuração do framework, as
+modificações serão feitas nesse arquivo.*/
+
+@theme {
+    --font-quicksand: "Quicksand", sans-serif;
+}
