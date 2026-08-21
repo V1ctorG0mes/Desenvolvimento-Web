@@ -11,7 +11,7 @@ console.log(nomeUsuario, logado);
 console.log(salarioUsuario, emailUsuario);
 console.log(DATA_NASCIMENTO);
 
-// typeof
+// typeof traz no console o tipo da variável
 console.log(typeof nomeUsuario, nomeUsuario);
 console.log(typeof logado, logado);
 console.log(typeof salarioUsuario, salarioUsuario);
