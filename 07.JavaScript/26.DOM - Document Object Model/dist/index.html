@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+
+    <!-- defer é um atributo para o carregamento do JS, ao carregar a página, primeiro executa o carregamento total da página e depois o javascript -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="p-6 flex justify-center">
+    <!-- Card do produto -->
+    <div id="card-produto" class="bg-gray-600 p-6 rounded shadow text-white">
+        <h2 class="titulo text-2xl font-bold mb-2">Notebook i5</h2>
+        <p class="preco text-gray-300 font-semibold mb-4 text-xl">Preço: R$ 3500</p>
+
+        <!-- Lista de características -->
+        <ul class="list-disc pl-5 text-xl">
+            <li class="item">Processador: i5</li>
+            <li class="item">Memória RAM: 8GB</li>
+            <li class="item">SSD: 256GB</li>
+            <li class="item">Sistema Operacional: Windows</li>
+        </ul>
+    </div>
+    <script src="./js/app.js" defer></script>
+</body>
+
+</html>
+
